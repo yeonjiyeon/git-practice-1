@@ -30,6 +30,9 @@ $ git push -f origin squash_branch2
 
 
 ```
+$ git status
+$ git add FILENAME
+$ git checkout -b issue-teset
 $ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
 $ git fetch --all
 $ git pull --all
