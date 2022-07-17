@@ -69,6 +69,9 @@ $ git push origin amend_branch
 ## Useful git commands  
 ### 1. Git pull all from remote  
 ```
+$ git status
+$ git add FILENAME
+$ git checkout -b issue-teset
 $ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
 $ git fetch --all
 $ git pull --all
